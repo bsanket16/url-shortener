@@ -1,6 +1,6 @@
 # sURL - Custom URL Shortener
 
-### Installation
+## Installation
 
 Use the package manager npm / yarn to install.
 
@@ -8,7 +8,7 @@ Use the package manager npm / yarn to install.
 npm install
 yarn install
 ```
-### Development & Production
+## Development & Production
 
 Use one of the following as required.
 
@@ -17,7 +17,7 @@ npm dev
 npm start
 ```
 
-### Contributing
+## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
