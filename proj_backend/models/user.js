@@ -15,6 +15,7 @@ const userSchema = new mongoose.Schema(
             type: String,
             required: true
         },
+        salt: String,
         links: [{
             type: ObjectId,
             ref: 'URL'

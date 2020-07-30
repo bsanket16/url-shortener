@@ -10,12 +10,11 @@ const urlSchema = new mongoose.Schema(
             type: String,
             default: Date.now
         },
-        author: {
+        user: {
             type: ObjectId,
             ref: 'User'
         }
-    },
-    { timestamps: true }
+    }
 )
 
 module.exports = mongoose.model('URL', urlSchema)
