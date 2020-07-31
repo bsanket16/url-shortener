@@ -1,14 +1,11 @@
 const express = require('express')
 const router = express.Router()
-const { shortenURL } = require('../controllers/url')
-//controllers
+const { shortenURL, publicShortenURL } = require('../controllers/url')
 
-//routes
-router.post('/url/shorten', shortenURL)
+//routes for logged in users
+router.post('/url/shorten/:userId', shortenURL)
 
+//public route
+router.post('/url/shorten', publicShortenURL)
 
 module.exports = router
-
-
-//api/urls/create/:userId
-//params

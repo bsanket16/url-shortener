@@ -1,9 +1,12 @@
 const URL = require('../models/url')
+const User = require('../models/user')
 
 const validUrl = require('valid-url')
 const shortid = require('shortid')
 
 exports.shortenURL = async ( req, res ) => {
+
+    const user = await User.findOne({ _id: req.params.userId })
 
     const { originalUrl } = req.body
     const baseUrl = process.env.baseUrl
@@ -30,12 +33,14 @@ exports.shortenURL = async ( req, res ) => {
                         originalUrl,
                         shortUrl,
                         urlCode,
-                        user,
                         date: new Date()
                     })
     
-                    await url
-                    .save()
+                    await url.save()
+
+                    user.links.push(url)
+                    await user.save()
+
                     res.json(url)    
             
             }
@@ -52,3 +57,52 @@ exports.shortenURL = async ( req, res ) => {
         })
     }
 }   
+
+exports.publicShortenURL = async ( req, res ) => {
+
+    const { originalUrl } = req.body
+    const baseUrl = process.env.baseUrl
+
+    if(!validUrl.isUri(baseUrl)) {
+        return res.status(400).json({
+            error : 'Invalid base url'
+        })
+    }
+
+    const urlCode = shortid.generate()
+
+    if(validUrl.isUri(originalUrl)) {
+        try {
+            let url = await URL.findOne({ originalUrl })
+
+            if(url) {
+                res.json(url)
+            }
+            else {
+                const shortUrl = baseUrl + '/' + urlCode
+
+                    url = new URL({
+                        originalUrl,
+                        shortUrl,
+                        urlCode,
+                        date: new Date()
+                    })
+    
+                    await url.save()
+
+                    res.json(url)    
+            
+            }
+        } catch (err) {
+            console.log(err)
+            res.status(500).json({
+                error : 'Server Error'
+            })
+        }
+    }
+    else {
+        res.status(400).json({
+            error : 'Invalid Url'
+        })
+    }
+} 

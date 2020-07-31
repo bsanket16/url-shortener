@@ -14,6 +14,7 @@ app.use(bodyParser.json())
 //Routes
 app.use('/api', require('./routes/auth'))
 app.use('/api', require('./routes/url'))
+app.use('/api', require('./routes/user'))
 
 //DB connection
 mongoose.connect( process.env.MONGO_URI, {
