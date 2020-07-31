@@ -7,10 +7,58 @@ body {
 
 .navbar-brand, .nav-item {
     cursor: pointer;
-    user-select: none;
+	user-select: none;
 }
+
+.dropdown-item:hover {
+	background-color: #F0F0F0;
+} 
+
+.dropdown-item:active {
+	background-color: #f7f7f7;
+} 
 
 .dropdown:hover .dropdown-menu {
     display: block;
-    margin-top: 0;   
+	margin-top: -24px;   
+}
+.dropdown-menu{
+	width: 28em;
+	left: 30%;
+}
+.dropdown {
+	position: static;
+}
+
+.navbar-collapse ul li .underline {
+	height: 2px;
+	background-color: transparent;
+	width: 0%;
+	transition: width 0.12s  ease-in, background-color 0.5s;
+	margin: -1px auto 0px auto ;
+	border-radius: 10px;
+}
+
+.navbar-collapse ul li:hover .underline {
+	background-color: red;
+	width: 58%;
+}
+
+.icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 10%;
+}
+
+.nav-link {
+	text-decoration: none;
+}
+
+.wrap-drop-down:hover > div {
+	color: lawngreen !important;
+}
+
+.wrap-drop-down:hover > div > span.text-dark {
+	color: lawngreen !important;
 }

@@ -4,7 +4,7 @@ import { Link, withRouter } from 'react-router-dom'
 const Menu = () => {
     return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-light fixed-top shadow-sm p-3">
+            <nav className="navbar navbar-expand-lg navbar-light fixed-top p-3">
                 <div className="container">
                     <span className="navbar-brand">
                         <Link to="/">
@@ -19,48 +19,206 @@ const Menu = () => {
                     <div className="collapse navbar-collapse" id="nav-collapse">
                         <ul className="navbar-nav ml-auto">
 
-                            <li className="nav-item dropdown">
-                                <span className="nav-link" data-toggle="dropdown">Why Surl?</span>
-                                <div className="dropdown-menu">
-                                    <Link className="dropdown-item" to="/">Action</Link>
-                                    <Link className="dropdown-item" to="/">Another action</Link>
-                                    <Link className="dropdown-item" to="/">Something else here</Link>
-                                </div>
-                            </li>
+{/* nav item 1 */}
 
                             <li className="nav-item dropdown">
-                                <span className="nav-link" data-toggle="dropdown">Solutions</span>
-                                <div className="dropdown-menu">
-                                    <Link className="dropdown-item" to="/">Action</Link>
-                                    <Link className="dropdown-item" to="/">Another action</Link>
-                                    <Link className="dropdown-item" to="/">Something else here</Link>
-                                </div>
+                                <Link to="/" style={{ textDecoration: 'none' }}>
+                                    <span className="nav-link" data-toggle="dropdown">Why Surl?</span>
+                                </Link>
+                                <div className="underline"></div>
+                                    <div className="dropdown-menu border border-light shadow-sm">
+
+                                        <Link className="dropdown-item" to="/">
+                                            <div className="wrap-drop-down d-flex">
+                                                <div className="icon text-muted">
+                                                    <i class="las la-bookmark la-2x"></i>
+                                                </div>
+
+                                                <div className="drop-content">
+                                                        <span className="text-dark">Surl 101 <br /></span>
+                                                        <span className="text-muted">An Introduction to Surl's features</span>
+                                                </div>
+                                            </div>
+                                        </Link>
+
+                                        <Link className="dropdown-item" to="/">
+                                            <div className="wrap-drop-down d-flex">
+                                                <div className="icon text-muted">
+                                                <i class="las la-code la-2x"></i>
+                                                </div>
+
+                                                <div className="drop-content">
+                                                        <span className="text-dark">Integrations & API <br /></span>
+                                                        <span className="text-muted">Connect Surl with tools you love</span>
+                                                </div>
+                                            </div>
+                                        </Link>
+
+                                        <Link className="dropdown-item" to="/">
+                                            <div className="wrap-drop-down d-flex">
+                                                <div className="icon text-muted">
+                                                <i class="las la-globe la-2x"></i>
+                                                </div>
+
+                                                <div className="drop-content">
+                                                        <span className="text-dark">Integrations & API <br /></span>
+                                                        <span className="text-muted">Connect Surl with tools you love</span>
+                                                </div>
+                                            </div>
+                                        </Link>
+
+                                    </div>
                             </li>
+
+{/* nav item 2 */}
+                            <li className="nav-item dropdown">
+                                <Link to="/" style={{ textDecoration: 'none' }}>
+                                    <span className="nav-link" data-toggle="dropdown">Solutions</span>
+                                </Link>
+                                <div className="underline"></div>
+                                    <div className="dropdown-menu border border-light shadow-sm">
+
+                                        <Link className="dropdown-item" to="/">
+                                            <div className="wrap-drop-down d-flex">
+                                                <div className="icon text-muted">
+                                                    <i class="las la-thumbs-up la-2x"></i>
+                                                </div>
+
+                                                <div className="drop-content">
+                                                        <span className="text-dark">Surl 101 <br /></span>
+                                                        <span className="text-muted">An Introduction to Surl's features</span>
+                                                </div>
+                                            </div>
+                                        </Link>
+
+                                        <Link className="dropdown-item" to="/">
+                                            <div className="wrap-drop-down d-flex">
+                                                <div className="icon text-muted">
+                                                    <i class="fa fa-feed fa-lg" aria-hidden="true"></i>
+                                                </div>
+
+                                                <div className="drop-content">
+                                                        <span className="text-dark">Integrations & API <br /></span>
+                                                        <span className="text-muted">Connect Surl with tools you love</span>
+                                                </div>
+                                            </div>
+                                        </Link>
+
+                                        <Link className="dropdown-item" to="/">
+                                            <div className="wrap-drop-down d-flex">
+                                                <div className="icon text-muted">
+                                                    <i class="las la-terminal la-2x"></i>
+                                                </div>
+
+                                                <div className="drop-content">
+                                                        <span className="text-dark">Integrations & API <br /></span>
+                                                        <span className="text-muted">Connect Surl with tools you love</span>
+                                                </div>
+                                            </div>
+                                        </Link>
+
+                                        <Link className="dropdown-item" to="/">
+                                            <div className="wrap-drop-down d-flex">
+                                                <div className="icon text-muted">
+                                                    <i class="fa fa-comment-o fa-lg" aria-hidden="true"></i>
+                                                </div>
+
+                                                <div className="drop-content">
+                                                        <span className="text-dark">Integrations & API <br /></span>
+                                                        <span className="text-muted">Connect Surl with tools you love</span>
+                                                </div>
+                                            </div>
+                                        </Link>
+
+                                    </div>
+                            </li>
+
+{/* nav item 3 */}
 
                             <li className="nav-item dropdown">
-                                <span className="nav-link" data-toggle="dropdown">Features</span>
-                                <div className="dropdown-menu">
-                                    <Link className="dropdown-item" to="/">Action</Link>
-                                    <Link className="dropdown-item" to="/">Another action</Link>
-                                    <Link className="dropdown-item" to="/">Something else here</Link>
-                                </div>
+                                <Link to="/" style={{ textDecoration: 'none' }}>
+                                    <span className="nav-link" data-toggle="dropdown">Features</span>
+                                </Link>
+                                <div className="underline"></div>
+                                    <div className="dropdown-menu border border-light shadow-sm">
+
+                                        <Link className="dropdown-item" to="/">
+                                            <div className="wrap-drop-down d-flex">
+                                                <div className="icon text-muted">
+                                                    <i class="las la-link la-2x"></i>
+                                                </div>
+
+                                                <div className="drop-content">
+                                                        <span className="text-dark">Surl 101 <br /></span>
+                                                        <span className="text-muted">An Introduction to Surl's features</span>
+                                                </div>
+                                            </div>
+                                        </Link>
+
+                                        <Link className="dropdown-item" to="/">
+                                            <div className="wrap-drop-down d-flex">
+                                                <div className="icon text-muted">
+                                                    <i class="las la-anchor la-2x"></i>
+                                                </div>
+
+                                                <div className="drop-content">
+                                                        <span className="text-dark">Integrations & API <br /></span>
+                                                        <span className="text-muted">Connect Surl with tools you love</span>
+                                                </div>
+                                            </div>
+                                        </Link>
+
+                                        <Link className="dropdown-item" to="/">
+                                            <div className="wrap-drop-down d-flex">
+                                                <div className="icon text-muted">
+                                                    <i class="las la-mobile la-2x"></i>
+                                                </div>
+
+                                                <div className="drop-content">
+                                                        <span className="text-dark">Integrations & API <br /></span>
+                                                        <span className="text-muted">Connect Surl with tools you love</span>
+                                                </div>
+                                            </div>
+                                        </Link>
+
+
+                                        <Link className="dropdown-item" to="/">
+                                            <div className="wrap-drop-down d-flex">
+                                                <div className="icon text-muted">
+                                                    <i class="las la-chart-pie la-2x"></i>
+                                                </div>
+
+                                                <div className="drop-content">
+                                                        <span className="text-dark">Integrations & API <br /></span>
+                                                        <span className="text-muted">Connect Surl with tools you love</span>
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </div>
                             </li>
 
+{/* nav item 4 */}
                             <li className="nav-item dropdown">
                                 <span className="nav-link" data-toggle="dropdown">Pricing</span>
-                                <div className="dropdown-menu">
-                                    <Link className="dropdown-item" to="/">Action</Link>
-                                    <Link className="dropdown-item" to="/">Another action</Link>
-                                    <Link className="dropdown-item" to="/">Something else here</Link>
-                                </div>
+                                <div className="underline"></div>
                             </li>
+
+{/* nav item 5 */}
 
                             <li className="nav-item dropdown">
                                 <span className="nav-link" data-toggle="dropdown">Resources</span>
-                                <div className="dropdown-menu">
-                                    <Link className="dropdown-item" to="/">Action</Link>
-                                    <Link className="dropdown-item" to="/">Another action</Link>
-                                    <Link className="dropdown-item" to="/">Something else here</Link>
+                                <div className="underline"></div>
+                                <div className="dropdown-menu border border-light shadow-sm row">
+                                    <div className="col-6 float-left">
+                                        <Link className="dropdown-item" to="/">Action</Link>
+                                        <Link className="dropdown-item" to="/">Another action</Link>
+                                        <Link className="dropdown-item" to="/">Something else here</Link>
+                                    </div>
+                                    <div className="col-6 float-right">
+                                        <Link className="dropdown-item" to="/">Action</Link>
+                                        <Link className="dropdown-item" to="/">Another action</Link>
+                                        <Link className="dropdown-item" to="/">Something else here</Link>
+                                    </div>
                                 </div>
                             </li>
                             
