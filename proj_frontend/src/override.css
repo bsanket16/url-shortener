@@ -1,0 +1,16 @@
+body {
+    margin-top: 150px;
+    box-sizing: border-box;
+}
+
+/* navbar */
+
+.navbar-brand, .nav-item {
+    cursor: pointer;
+    user-select: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;   
+}
