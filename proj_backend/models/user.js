@@ -4,7 +4,13 @@ const uuidv1 = require('uuidv1')
 const {ObjectId} = mongoose.Schema
 
 const userSchema = new mongoose.Schema(
-    {
+    {   
+        username: {
+            type: String,
+            required: true,
+            maxlength: 32,
+            trim: true
+        },
         email: {
             type: String,
             trim: true,

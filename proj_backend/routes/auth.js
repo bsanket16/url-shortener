@@ -4,6 +4,7 @@ const { check } = require('express-validator')
 const { logout, signup, login, isSignedIn } = require('../controllers/auth')
 
 router.post('/signup', [
+    check('username').isLength({ min : 3}).withMessage('Username must be at least 3 characters'),
     check('email').normalizeEmail().isEmail().withMessage('Email address required'),
     check('password').not().isEmpty().withMessage('Password required').isLength({ min : 5 }).withMessage('Password too short').isLength({ max : 12 }).withMessage('Password too long'),
 ], signup)
