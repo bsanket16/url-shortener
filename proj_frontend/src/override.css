@@ -23,8 +23,8 @@ body {
 	margin-top: -24px;   
 }
 .dropdown-menu{
-	width: 28em;
-	left: 30%;
+	width: 32em;
+	left: 21%;
 }
 .dropdown {
 	position: static;
@@ -40,7 +40,7 @@ body {
 }
 
 .navbar-collapse ul li:hover .underline {
-	background-color: red;
+	background-color: #0163b9;
 	width: 58%;
 }
 
@@ -53,12 +53,56 @@ body {
 
 .nav-link {
 	text-decoration: none;
+	color: #040F0F !important;
+	opacity: 0.8;
+	font-family: 'Montserrat' !important;
+	font-size: 0.88rem;
+	font-weight: 400;
+}
+
+.nav-link:hover, .nav-link:active {
+	color: #0163b9 !important;
+}
+
+.dropdown:hover > .nav-link{
+	color: #0163b9 !important;
 }
 
 .wrap-drop-down:hover > div {
-	color: lawngreen !important;
+	color: #0163b9 !important;
 }
 
 .wrap-drop-down:hover > div > span.text-dark {
-	color: lawngreen !important;
+	color: #0163b9 !important;
+}
+
+.btn:focus,.btn:active {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+.btn {
+	background-color: #006dcc;
+	border: none !important;
+	border-radius: 7px;
+	padding: 8px 14px 8px 14px;
+}
+
+.btn:hover {
+	background-color: #0163b9;
+}
+
+.drop-content > .text-dark {
+	font-family: 'Montserrat';
+	font-weight: 600;
+	font-size: 0.9rem;
+}
+
+.info-text {
+	margin-top: -3px;
+	font-size: 0.9rem;
+}
+
+.signup {
+	color: #004f94 !important;
 }
