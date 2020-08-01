@@ -69,11 +69,11 @@ body {
 }
 
 .wrap-drop-down:hover > div {
-	color: #0163b9 !important;
+	color: #005299 !important;
 }
 
 .wrap-drop-down:hover > div > span.text-dark {
-	color: #0163b9 !important;
+	color: #005299 !important;
 }
 
 .btn:focus,.btn:active {

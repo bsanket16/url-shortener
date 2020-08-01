@@ -4,7 +4,7 @@ import { Link, withRouter } from 'react-router-dom'
 const Menu = () => {
     return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-light fixed-top p-3">
+            <nav className="navbar navbar-expand-lg navbar-light bg-white fixed-top p-3">
                 <div className="container">
                     <span className="navbar-brand mr-5">
                         <Link to="/">
@@ -30,7 +30,7 @@ const Menu = () => {
                                         <Link className="dropdown-item" to="/">
                                             <div className="wrap-drop-down d-flex mb-1">
                                                 <div className="icon text-muted mr-2">
-                                                    <i class="las la-bookmark la-2x"></i>
+                                                    <i className="las la-bookmark la-2x"></i>
                                                 </div>
 
                                                 <div className="drop-content">
@@ -43,7 +43,7 @@ const Menu = () => {
                                         <Link className="dropdown-item" to="/">
                                             <div className="wrap-drop-down d-flex mb-1">
                                                 <div className="icon text-muted mr-2">
-                                                <i class="las la-code la-2x"></i>
+                                                <i className="las la-code la-2x"></i>
                                                 </div>
 
                                                 <div className="drop-content">
@@ -56,7 +56,7 @@ const Menu = () => {
                                         <Link className="dropdown-item" to="/">
                                             <div className="wrap-drop-down d-flex mb-1">
                                                 <div className="icon text-muted mr-2">
-                                                <i class="las la-globe la-2x"></i>
+                                                <i className="las la-globe la-2x"></i>
                                                 </div>
 
                                                 <div className="drop-content">
@@ -80,7 +80,7 @@ const Menu = () => {
                                         <Link className="dropdown-item" to="/">
                                             <div className="wrap-drop-down d-flex mb-1">
                                                 <div className="icon text-muted mr-2">
-                                                    <i class="las la-thumbs-up la-2x"></i>
+                                                    <i className="las la-thumbs-up la-2x"></i>
                                                 </div>
 
                                                 <div className="drop-content">
@@ -93,7 +93,7 @@ const Menu = () => {
                                         <Link className="dropdown-item" to="/">
                                             <div className="wrap-drop-down d-flex mb-1">
                                                 <div className="icon text-muted mr-2">
-                                                    <i class="fa fa-feed fa-lg" aria-hidden="true"></i>
+                                                    <i className="fa fa-feed fa-lg" aria-hidden="true"></i>
                                                 </div>
 
                                                 <div className="drop-content">
@@ -106,7 +106,7 @@ const Menu = () => {
                                         <Link className="dropdown-item" to="/">
                                             <div className="wrap-drop-down d-flex mb-1">
                                                 <div className="icon text-muted mr-2">
-                                                    <i class="las la-terminal la-2x"></i>
+                                                    <i className="las la-terminal la-2x"></i>
                                                 </div>
 
                                                 <div className="drop-content">
@@ -119,7 +119,7 @@ const Menu = () => {
                                         <Link className="dropdown-item" to="/">
                                             <div className="wrap-drop-down d-flex mb-1">
                                                 <div className="icon text-muted mr-2">
-                                                    <i class="fa fa-comment-o fa-lg" aria-hidden="true"></i>
+                                                    <i className="fa fa-comment-o fa-lg" aria-hidden="true"></i>
                                                 </div>
 
                                                 <div className="drop-content">
@@ -143,7 +143,7 @@ const Menu = () => {
                                         <Link className="dropdown-item" to="/">
                                             <div className="wrap-drop-down d-flex mb-1">
                                                 <div className="icon text-muted mr-2">
-                                                    <i class="las la-link la-2x"></i>
+                                                    <i className="las la-link la-2x"></i>
                                                 </div>
 
                                                 <div className="drop-content">
@@ -156,7 +156,7 @@ const Menu = () => {
                                         <Link className="dropdown-item" to="/">
                                             <div className="wrap-drop-down d-flex mb-1">
                                                 <div className="icon text-muted mr-2">
-                                                    <i class="las la-anchor la-2x"></i>
+                                                    <i className="las la-anchor la-2x"></i>
                                                 </div>
 
                                                 <div className="drop-content">
@@ -169,7 +169,7 @@ const Menu = () => {
                                         <Link className="dropdown-item" to="/">
                                             <div className="wrap-drop-down d-flex mb-1">
                                                 <div className="icon text-muted mr-2">
-                                                    <i class="las la-mobile la-2x"></i>
+                                                    <i className="las la-mobile la-2x"></i>
                                                 </div>
 
                                                 <div className="drop-content">
@@ -183,7 +183,7 @@ const Menu = () => {
                                         <Link className="dropdown-item" to="/">
                                             <div className="wrap-drop-down d-flex mb-1">
                                                 <div className="icon text-muted mr-2">
-                                                    <i class="las la-chart-pie la-2x"></i>
+                                                    <i className="las la-chart-pie la-2x"></i>
                                                 </div>
 
                                                 <div className="drop-content">

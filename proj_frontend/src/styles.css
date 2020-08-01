@@ -1,0 +1,122 @@
+body {
+    margin: 0em;
+    padding: 0em;
+    box-sizing: border-box;
+}
+
+/* hero section */
+
+.hero-main {
+    margin-top: -60px;
+}
+
+.hero-head {
+	font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 3.28rem;
+    color: #252628;
+}
+
+.sub-head {
+    font-family: 'Montserrat';
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #252628 !important;
+    opacity: 0.75;
+}
+
+.hero-btn {
+	background-color: #0161b6;
+    border: none !important;
+    font-family: 'Montserrat';
+	border-radius: 7px;
+	padding: 12px 22px 12px 22px !important;
+}
+
+.hero-btn:hover {
+	background-color: #005299;
+}
+
+.sub-button {
+    margin-left: 4.4rem;
+    color: #0161b6;
+    cursor: pointer;
+}
+
+.hero-right {
+    user-select: none;
+}
+
+.hero-left {
+    margin-top: -25px;
+}
+
+.hero-logo {
+    width: 470px;
+    margin-left: -30px;
+}
+
+/* Footer */
+
+.companies {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+.brands {
+    margin-bottom: 50px;
+    user-select: none;
+}
+.more {
+    background-color: #0B1736;
+    padding: 100px;
+}
+
+.more-link {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+/* Actual Footer */
+
+ul > li {
+    list-style-type: none;
+}
+
+.foot-item-head {
+    font-weight: 700;
+}
+
+.footer-items {
+    font-family: 'Montserrat';
+    font-size: 0.9rem;
+}
+
+.foot-items {
+    font-size: 0.85rem;
+}
+
+.foot-items:hover {
+    color: #0161b6;
+    cursor: pointer;
+}
+
+.brand {
+    font-family: 'Montserrat';
+    font-size: 0.8rem;
+    user-select: none;
+}
+
+.footer-logo {
+    margin-left: -13px;
+}
+
+.social {
+    opacity: 0.7;
+}
+
+.surl-footer {
+    margin-top: 100px;
+}
