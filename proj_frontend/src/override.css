@@ -82,14 +82,14 @@ body {
 }
 
 .btn {
-	background-color: #006dcc;
+	background-color: #003da7;
 	border: none !important;
 	border-radius: 7px;
 	padding: 8px 14px 8px 14px;
 }
 
 .btn:hover {
-	background-color: #0163b9;
+	background-color: #014480;
 }
 
 .drop-content > .text-dark {
@@ -105,4 +105,28 @@ body {
 
 .signup {
 	color: #004f94 !important;
+}
+
+/* shorten-url */
+
+.shorten-url {
+	background-color: #0B1736;
+	margin-bottom: 110px !important;
+}
+
+.form-control {
+	min-height: 100% !important;
+	font-weight: 400;
+	font-size: 1.1rem;
+	font-family: 'Montserrat';
+	border-radius: 8px;
+}
+
+.form-control::placeholder {
+	padding-left: 10px;
+}
+
+.url-btn {
+	padding: 16px 90px 16px 90px;
+	font-family: 'Montserrat';
 }

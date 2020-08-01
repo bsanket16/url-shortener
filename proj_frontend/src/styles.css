@@ -62,6 +62,8 @@ body {
     font-family: 'Montserrat';
     font-weight: 800;
     font-size: 1.8rem;
+    margin-top: 80px !important;
+    margin-bottom: 30px !important;
 }
 
 .brands {

@@ -1,9 +1,11 @@
 import React from 'react'
 
 import '../styles.css'
+import '../override.css'
+
 import Menu from './Menu'
 import Footer from './Footer'
-import '../override.css'
+import ShortenUrl from '../user/ShortenUrl'
 
 export default function Home() {
 
@@ -45,6 +47,7 @@ export default function Home() {
         <>
             <Menu />
             {heroSection()}
+            <ShortenUrl />
             <Footer />
         </>
     )
