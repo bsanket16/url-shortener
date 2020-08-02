@@ -262,11 +262,11 @@ const Menu = () => {
 
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item mr-3">
-                                <Link className="nav-link" to="/">Log in</Link>
+                                <Link className="nav-link" to="/login">Log in</Link>
                             </li>
 
                             <li className="nav-item mr-4">
-                                <Link className="nav-link signup" to="/">Sign up</Link>
+                                <Link className="nav-link signup" to="/signup">Sign up</Link>
                             </li>
 
                             <li className="nav-item d-none d-lg-flex">

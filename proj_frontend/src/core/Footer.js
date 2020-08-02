@@ -1,37 +1,20 @@
 import React from 'react'
 
 const Footer = () => {
+
     return (
         <>
-            
-            <hr className="mb-5" style={{
-                width: '80%',
-                backgroundColor: '#000000',
-                height: .1,
-                opacity: '0.7',
-                borderColor : '#cccccc'
-            }}/>
-
-            <div className="row text-dark companies m-auto pt-3 text-center">
-                <div className="col-12 brand-text">
-                    The most recognized brands in the world love Surl
-                </div>
-                <div className="col-12 brands d-none d-sm-block">
-                    <img className="mt-5 mb-5" src="brand-logos.png" alt="" width="70%" /> 
-                </div>
-            </div>
-
             <div className="row text-dark m-auto more">
                 <div className="col-12 more-link text-white text-center">
                     More than a link shortener
                 </div>
                 <div className="col-12 get-started text-center mt-5">
                     <button className="hero-btn btn btn-primary btn-lg text-white">
-                        Get Started for Free    
+                        Get Started for Free
                     </button>
                 </div>
             </div>
-
+            
                 <footer className="row m-auto pt-5 pb-3">
 
                 <div className="col-1"></div>

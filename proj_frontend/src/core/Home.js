@@ -98,12 +98,34 @@ export default function Home() {
         </>
     )
 
+    const brandSrul = () => (
+        <>
+                        <hr className="mb-5" style={{
+                width: '80%',
+                backgroundColor: '#000000',
+                height: .1,
+                opacity: '0.7',
+                borderColor : '#cccccc'
+            }}/>
+
+            <div className="row text-dark companies m-auto pt-3 text-center">
+                <div className="col-12 brand-text">
+                    The most recognized brands in the world love Surl
+                </div>
+                <div className="col-12 brands d-none d-sm-block">
+                    <img className="mt-5 mb-5" src="brand-logos.png" alt="" width="70%" /> 
+                </div>
+            </div>
+        </>
+    )
+
     return (
         <>
             <Menu />
             {heroSection()}
             <ShortenUrl />
             {surlAbout()}
+            {brandSrul()}
             <Footer />
         </>
     )
