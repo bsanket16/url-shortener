@@ -270,7 +270,7 @@ const Menu = () => {
                             </li>
 
                             <li className="nav-item">
-                                <button type="button" className="btn btn-primary">Get a Quote</button>
+                                <button type="button" className="nav-btn btn btn-primary">Get a Quote</button>
                             </li>
                         </ul>
 

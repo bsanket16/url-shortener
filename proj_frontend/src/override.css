@@ -81,15 +81,15 @@ body {
 	box-shadow: none !important;
 }
 
-.btn {
-	background-color: #003da7;
+.nav-btn {
+	background-color: #3069c5;
 	border: none !important;
 	border-radius: 7px;
 	padding: 8px 14px 8px 14px;
 }
 
-.btn:hover {
-	background-color: #014480;
+.nav-btn:hover {
+	background-color: #035aa7;
 }
 
 .drop-content > .text-dark {
@@ -115,7 +115,7 @@ body {
 }
 
 .form-control {
-	min-height: 100% !important;
+	min-height: 95% !important;
 	font-weight: 400;
 	font-size: 1.1rem;
 	font-family: 'Montserrat';
@@ -127,6 +127,50 @@ body {
 }
 
 .url-btn {
-	padding: 16px 90px 16px 90px;
+	background-color: #0e379e;
+	padding: 16px 88px 16px 88px;
+	border-radius: 8px;
+	border: none;
 	font-family: 'Montserrat';
+}
+
+.url-btn:hover {
+	background-color: #092d88;
+	border: none;
+	font-family: 'Montserrat';
+}
+
+.sub-shorten-text > span{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.sub-shorten-text{
+	opacity: 0.6;
+	font-family: 'Montserrat';
+	font-size: 0.85rem;
+	font-weight: 200;
+}
+
+.copy {
+	background-color: #ecf3f6;
+	border: none;
+	border-radius: 8px;
+	padding: 7px 20px 7px 20px;
+	font-family: "montserrat";
+	font-size: 0.95;
+}
+
+.short-links{
+	border-radius: 10px;
+}
+
+.list-group-item {
+	opacity: 0.9;
+}
+
+.list-group-links {
+	color: #243ba3 !important;
+	font-size: 1.1rem;
+	cursor: pointer;
 }
