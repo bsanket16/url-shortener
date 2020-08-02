@@ -10,28 +10,6 @@ body {
     margin-top: -60px;
 }
 
-.hero-head {
-	font-family: 'Montserrat';
-    font-weight: 800;
-    font-size: 3.28rem;
-    color: #252628;
-}
-
-.sub-head {
-    font-family: 'Montserrat';
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: #252628 !important;
-    opacity: 0.75;
-}
-
-.hero-btn {
-	background-color: #0161b6;
-    border: none !important;
-    font-family: 'Montserrat';
-	border-radius: 7px;
-	padding: 12px 22px 12px 22px !important;
-}
 
 .hero-btn:hover {
 	background-color: #005299;
@@ -58,13 +36,6 @@ body {
 
 /* Footer */
 
-.companies {
-    font-family: 'Montserrat';
-    font-weight: 800;
-    font-size: 1.8rem;
-    margin-top: 50px !important;
-    margin-bottom: 10px !important;
-}
 
 .brands {
     margin-bottom: 20px;

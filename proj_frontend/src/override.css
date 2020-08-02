@@ -128,7 +128,6 @@ body {
 
 .url-btn {
 	background-color: #0e379e;
-	padding: 16px 88px 16px 88px;
 	border-radius: 8px;
 	border: none;
 	font-family: 'Montserrat';
@@ -167,10 +166,4 @@ body {
 
 .list-group-item {
 	opacity: 0.9;
-}
-
-.list-group-links {
-	color: #243ba3 !important;
-	font-size: 1.1rem;
-	cursor: pointer;
 }

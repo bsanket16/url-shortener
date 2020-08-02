@@ -6,7 +6,7 @@ const Menu = () => {
         <>
             <nav className="navbar navbar-expand-lg navbar-light bg-white fixed-top p-3">
                 <div className="container">
-                    <span className="navbar-brand mr-5">
+                    <span className="navbar-brand">
                         <Link to="/">
                             <img src="logo.png" alt="logo" width="60%"/>
                         </Link>
@@ -17,7 +17,7 @@ const Menu = () => {
                     </button>
 
                     <div className="collapse navbar-collapse" id="nav-collapse">
-                        <ul className="navbar-nav">
+                        <ul className="navbar-nav d-none d-lg-flex ml-auto">
 
 {/* nav item 1 */}
                             <li className="nav-item dropdown ml-2 mr-2">
@@ -269,7 +269,7 @@ const Menu = () => {
                                 <Link className="nav-link signup" to="/">Sign up</Link>
                             </li>
 
-                            <li className="nav-item">
+                            <li className="nav-item d-none d-lg-flex">
                                 <button type="button" className="nav-btn btn btn-primary">Get a Quote</button>
                             </li>
                         </ul>

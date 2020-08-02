@@ -1,0 +1,409 @@
+@media (min-width: 300px) {
+    .hero-head {
+        font-family: 'Montserrat';
+        font-weight: 800;
+        font-size: 2rem;
+        color: #252628;
+        margin-top: 100px;
+    }
+    .hero-btn {
+        background-color: #0161b6;
+        border: none !important;
+        font-family: 'Montserrat';
+        border-radius: 7px;
+        padding: 8px 18px 8px 18px !important;
+    }
+
+    /* shorten */
+    .url-btn {
+        padding: 8px 22px 8px 22px;
+        margin-top: 10px;
+    }
+
+    .form-control {
+        min-height: 70% !important;
+        font-weight: 400;
+        font-size: 1.1rem;
+        font-family: 'Montserrat';
+        border-radius: 8px;
+    }
+    .list-group-links {
+        color: #243ba3 !important;
+        font-size: 1.1rem;
+        cursor: pointer;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .brand-text {
+        font-size: 1.5rem;
+        margin-bottom: 50px;
+    }
+    .more {
+        padding: 25px;
+    }
+}
+
+@media (min-width: 400px) { 
+    .hero-main {
+        margin-bottom: 50px;
+    }
+    .hero-head {
+        font-family: 'Montserrat';
+        font-weight: 800;
+        font-size: 2rem;
+        color: #252628;
+        margin-top: 100px;
+    }
+    .hero-btn {
+        background-color: #0161b6;
+        border: none !important;
+        font-family: 'Montserrat';
+        border-radius: 7px;
+        padding: 8px 18px 8px 18px !important;
+    }
+        /* shorten */
+        .url-btn {
+            padding: 8px 22px 8px 22px;
+            margin-top: 10px;
+        }
+
+        .form-control {
+            min-height: 60% !important;
+            font-weight: 400;
+            font-size: 1.1rem;
+            font-family: 'Montserrat';
+            border-radius: 8px;
+        }
+
+        .companies {
+            font-family: 'Montserrat';
+            font-weight: 800;
+            font-size: 1.8rem;
+            margin-top: 50px !important;
+            margin-bottom: 10px !important;
+        }
+        .brand-text {
+            font-size: 1.6rem;
+            margin-bottom: 50px;
+        }
+        .more {
+            padding: 50px;
+        }
+}
+
+@media (min-width: 576px) { 
+    .hero-main {
+        margin-bottom: 0px;
+    }
+    .hero-logo {
+        width: 145%;
+    }
+    .hero-head {
+        font-family: 'Montserrat';
+        font-weight: 800;
+        font-size: 1.4rem;
+        color: #252628;
+        margin-top: 0px;
+    }
+    .hero-btn {
+        background-color: #0161b6;
+        border: none !important;
+        font-family: 'Montserrat';
+        border-radius: 7px;
+        padding: 5px 14px 5px 14px !important;
+    }
+        /* shorten */
+        .url-btn {
+            padding: 12px 22px 12px 22px;
+            margin: 0px;
+        }
+
+        
+    .list-group-links {
+        color: #243ba3 !important;
+        font-size: 1.1rem;
+        cursor: pointer;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+        .form-control {
+            min-height: 100% !important;
+            font-weight: 400;
+            font-size: 1.1rem;
+            font-family: 'Montserrat';
+            border-radius: 8px;
+        }
+        .more {
+            background-color: #0B1736;
+            padding: 100px;
+        }
+        
+        .more-link {
+            font-family: 'Montserrat';
+            font-weight: 800;
+            font-size: 2rem;
+        }
+        .companies {
+            font-family: 'Montserrat';
+            font-weight: 800;
+            font-size: 1.8rem;
+            margin-top: 50px !important;
+            margin-bottom: 10px !important;
+        }
+        .brand-text {
+            font-size: 1.8rem;
+            margin-bottom: 0px;
+        }
+}
+
+@media (min-width: 768px) { 
+    .hero-logo {
+        width: 120%;
+    }
+    .hero-head {
+        font-family: 'Montserrat';
+        font-weight: 800;
+        font-size: 1.6rem;
+        color: #252628;
+    }
+    .hero-btn {
+        background-color: #0161b6;
+        border: none !important;
+        font-family: 'Montserrat';
+        border-radius: 7px;
+        padding: 5px 14px 5px 14px !important;
+    }
+        /* shorten */
+        .url-btn {
+            padding: 16px 50px 16px 50px;
+        }
+
+        
+    .list-group-links {
+        color: #243ba3 !important;
+        font-size: 1.1rem;
+        cursor: pointer;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+        .form-control {
+            min-height: 70% !important;
+            font-weight: 400;
+            font-size: 1.1rem;
+            font-family: 'Montserrat';
+            border-radius: 8px;
+        }
+        .companies {
+            font-family: 'Montserrat';
+            font-weight: 800;
+            font-size: 1.8rem;
+            margin-top: 50px !important;
+            margin-bottom: 10px !important;
+        }
+        .brand-text {
+            font-size: 1.8rem;
+            margin-bottom: 0px;
+        }
+}
+
+@media (min-width: 840px) { 
+    .hero-logo {
+        width: 140%;
+    }
+    .hero-head {
+        font-family: 'Montserrat';
+        font-weight: 800;
+        font-size: 2rem;
+        color: #252628;
+    }
+    .hero-btn {
+        background-color: #0161b6;
+        border: none !important;
+        font-family: 'Montserrat';
+        border-radius: 7px;
+        padding: 8px 18px 8px 18px !important;
+    }
+        /* shorten */
+        .url-btn {
+            padding: 16px 68px 16px 68px;
+        }
+
+        .form-control {
+            min-height: 70% !important;
+            font-weight: 400;
+            font-size: 1.1rem;
+            font-family: 'Montserrat';
+            border-radius: 8px;
+        }
+        .companies {
+            font-family: 'Montserrat';
+            font-weight: 800;
+            font-size: 1.8rem;
+            margin-top: 50px !important;
+            margin-bottom: 10px !important;
+        }
+}
+
+@media (min-width: 992px) { 
+
+    .hero-logo {
+        width: 125%;
+    }
+
+    .url-btn {
+        padding: 20px 50px 20px 50px;
+    }
+    .hero-head {
+        font-family: 'Montserrat';
+        font-weight: 800;
+        font-size: 2.4rem;
+        color: #252628;
+    }
+    .sub-head {
+        font-family: 'Montserrat';
+        font-size: 1rem;
+        font-weight: 500;
+        color: #252628 !important;
+        opacity: 0.75;
+    }
+
+    .form-control {
+        min-height: 95% !important;
+        font-weight: 400;
+        font-size: 1.1rem;
+        font-family: 'Montserrat';
+        border-radius: 8px;
+    }
+
+    .list-group-links {
+        color: #243ba3 !important;
+        font-size: 1.1rem;
+        cursor: pointer;
+        margin-top: 0px;
+    }
+    
+    /* Footer */
+
+    .foot-logo {
+        width: 30%;
+    }
+
+    .companies {
+        font-family: 'Montserrat';
+        font-weight: 800;
+        font-size: 1.8rem;
+        margin-top: 50px !important;
+        margin-bottom: 10px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero-logo {
+        width: 125%;
+    }
+    .url-btn {
+	padding: 16px 88px 16px 88px;
+    }
+    .hero-head {
+        font-family: 'Montserrat';
+        font-weight: 800;
+        font-size: 3rem;
+        color: #252628;
+    }
+
+    .list-group-links {
+        color: #243ba3 !important;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+
+    .form-control {
+        min-height: 95% !important;
+        font-weight: 400;
+        font-size: 1.1rem;
+        font-family: 'Montserrat';
+        border-radius: 8px;
+    }
+    
+    /* Footer */
+
+    .foot-logo {
+        width: 30%;
+    }
+
+    .brand-text {
+        font-size: 1.8rem;
+        letter-spacing: 0.01em;
+    }
+}
+
+@media (min-width: 1300px) {
+
+    /* hero-section */
+    .hero-logo {
+        width: 130%;
+    }
+    .hero-head {
+        font-family: 'Montserrat';
+        font-weight: 800;
+        font-size: 3.28rem;
+        color: #252628;
+    }
+    .sub-head {
+        font-family: 'Montserrat';
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: #252628 !important;
+        opacity: 0.75;
+    }
+
+    .hero-btn {
+        background-color: #0161b6;
+        border: none !important;
+        font-family: 'Montserrat';
+        border-radius: 7px;
+        padding: 12px 22px 12px 22px !important;
+    }
+
+    /* shorten */
+    .url-btn {
+	padding: 16px 88px 16px 88px;
+    }
+
+    .form-control {
+        min-height: 95% !important;
+        font-weight: 400;
+        font-size: 1.1rem;
+        font-family: 'Montserrat';
+        border-radius: 8px;
+    }
+
+    .list-group-links {
+        color: #243ba3 !important;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+    
+    /* footer */
+
+        /* Footer */
+
+        .foot-logo {
+            width: 30%;
+        }
+        .companies {
+            font-family: 'Montserrat';
+            font-weight: 800;
+            font-size: 1.8rem;
+            margin-top: 50px !important;
+            margin-bottom: 10px !important;
+        }
+        .brand-text {
+            font-size: 1.8rem;
+            letter-spacing: 0.01em;
+        }
+}
+

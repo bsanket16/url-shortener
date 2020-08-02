@@ -2,6 +2,7 @@ import React from 'react'
 
 import '../styles.css'
 import '../override.css'
+import '../media.css'
 
 import Menu from './Menu'
 import Footer from './Footer'
@@ -13,7 +14,7 @@ export default function Home() {
         <>
             <div className="container">
                 <div className="hero-main row align-items-center">
-                    <div className="col-12 col-lg-8">
+                    <div className="col-12 col-sm-8 col-md-8">
                         <div className="hero-left text-dark">
                             <div className="hero-head text-dark">
                                 Create Click-Worthy Links
@@ -24,18 +25,18 @@ export default function Home() {
                             </div>
 
                             <div className="button">
-                                <button className="hero-btn btn btn-primary btn-lg text-white">
+                                <button className="hero-btn btn btn-primary btn-lg text-white d-none d-sm-block">
                                     Get Started for Free    
                                 </button>
 
-                                <div className="sub-button">
+                                <div className="sub-button d-none d-sm-block">
                                     Get a Quote
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div className="hero-right col-12 col-lg-4 mt-1">
+                    <div className="hero-right col-12 d-none d-sm-block col-sm-4 col-md-4 mt-1">
                         <img className="hero-logo" src="hero.png" alt="hero"/>
                     </div>
                 </div>

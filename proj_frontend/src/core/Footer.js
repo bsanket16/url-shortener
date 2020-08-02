@@ -16,7 +16,7 @@ const Footer = () => {
                 <div className="col-12 brand-text">
                     The most recognized brands in the world love Surl
                 </div>
-                <div className="col-12 brands">
+                <div className="col-12 brands d-none d-sm-block">
                     <img className="mt-5 mb-5" src="brand-logos.png" alt="" width="70%" /> 
                 </div>
             </div>
@@ -33,8 +33,10 @@ const Footer = () => {
             </div>
 
                 <footer className="row m-auto pt-5 pb-3">
+
+                <div className="col-1"></div>
 {/* 1 */}
-                    <div className="col-12 col-lg-2 offset-1 pt-4">
+                    <div className="col-12 col-lg-2 pt-4">
                         <div className="footer-item">
                             <ul className="footer-items">
                                 <li className="foot-item-head mb-2">Why Surl?</li>
@@ -104,9 +106,9 @@ const Footer = () => {
                         </div>
                     </div>
 {/* 5 */}
-                    <div className="col-12 col-lg-2 pt-4">
+                    <div className="col-12 col-lg-2 pt-4 footer-end d-none d-lg-block">
                         <div className="footer-logo">
-                            <img src="logo.png" alt="logo" width="30%"/>
+                            <img className="foot-logo" src="logo.png" alt="logo" width="30%"/>
                         </div>
                         <div className="row brand mt-3 mb-3">
                             © 2020 Bitly Handmade in NYC, San Francisco, Denver, and all over the world.

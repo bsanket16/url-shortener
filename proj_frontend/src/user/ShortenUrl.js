@@ -9,14 +9,14 @@ const ShortenUrl = () => {
                 <form>
                     <div className="form-group">
                         <div className="row container m-auto">
-                            <div className="col-9">
+                            <div className="col-12 col-sm-9">
                                 <input type="text" className="form-control url-field" placeholder="Shorten your link"/>
-                                <div className="sub-shorten-text float-right mt-1 mr-3">
+                                <div className="sub-shorten-text float-right mt-1 mr-3 d-none d-md-block">
                                     <span>Log in</span> to manage and track all your shorten links at one place. <span>Privacy & Terms </span>
                                 </div>
                             </div>
 
-                            <div className="col-3">
+                            <div className="col-12 col-sm-3">
                                 <button className="url-btn btn btn-primary btn-lg text-white">
                                     Shorten   
                                 </button>
@@ -27,9 +27,9 @@ const ShortenUrl = () => {
 
                 <div className="short-links container card text-dark mt-5">
                     <div className="card-body">
-                        <ul class="list-group list-group-flush">
+                        <ul className="list-group list-group-flush">
                             
-                            <li class="list-group-item row d-flex p-3 mt-1">
+                            <li className="list-group-item row d-flex p-3 mt-1">
                                 <span className="col-lg-7">https://getbootstrap.com/docs/4.0/components/card/d4.0/components/card</span>
                                 <span className="col-lg-4 list-group-links">https://powerful-basin.heroku.app.com</span>
                                 <span className="col-lg-1">
@@ -37,7 +37,7 @@ const ShortenUrl = () => {
                                 </span>
                             </li>
 
-                            <li class="list-group-item row d-flex p-3 mt-1">
+                            <li className="list-group-item row d-flex p-3 mt-1">
                                 <span className="col-lg-7">https://getbootstrap.com/docs/4.0/componennents/carddocs/.0/components/card</span>
                                 <span className="col-lg-4 list-group-links">https://powerful-basin.heroku.app.com</span>
                                 <span className="col-lg-1">
