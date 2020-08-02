@@ -106,3 +106,22 @@ exports.publicShortenURL = async ( req, res ) => {
         })
     }
 } 
+
+exports.redirectURL = async ( req, res ) => {
+    try {
+        const url = await URL.findOne({ urlCode: req.params.code })
+
+        if (url) {
+            return res.redirect(url.originalUrl)
+        } else {
+            return res.status(404).json({
+                error : 'No URL Found'
+            })
+        }
+    } catch (err) {
+        console.log(err)
+        res.status(500).json({
+            error : 'Server Error'
+        })
+    }
+}
