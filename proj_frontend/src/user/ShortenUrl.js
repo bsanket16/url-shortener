@@ -1,9 +1,10 @@
 import React from 'react'
 
 const ShortenUrl = () => {
-    return (
-        <>
-            <div className="shorten-url text-white pt-4 pb-5 mb-5">
+
+    const shortenUrlArea = () => (
+    <>
+        <div className="shorten-url text-white pt-4 pb-5">
                 
                 <form>
                     <div className="form-group">
@@ -49,6 +50,18 @@ const ShortenUrl = () => {
                 </div>
 
             </div>
+
+            {/* <div className="scroll-text text-center text-muted">
+                <div>Scroll to learn more</div>
+                <i className="las la-angle-down la-lg text-muted"></i>
+            </div> */}
+            
+    </>
+)
+
+    return (
+        <>
+            {shortenUrlArea()}
         </>
     )
 }

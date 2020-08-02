@@ -43,11 +43,66 @@ export default function Home() {
         </>
     )
 
+    const surlAbout = () => (
+        <>
+            <div className="container grow">
+                
+                <div className=" container text-center">
+                    <div className="grow-brand text-dark text-center">Grow Your Brand With Every Click</div>
+                    <div className="sub-grow-brand text-center text-dark mt-1">
+                        Branded links can drive a 34% higher click-through versus non-branded links, 
+                        meaning they help get more eyeballs on your brand and its content.
+                    </div>
+                </div>
+
+                <div className="row">
+
+                    <div className="col-lg-4">
+                        <img src="grow1.png" alt="" width="100%"/>
+                        <div className="grow-item-head">Inspire trust</div>
+                        <div className="grow-item-sub">
+                        As your click numbers go up, your brand recognition increases. 
+                        And the more that grows, the more confident people become in the 
+                        integrity of your content and communications. (It’s a wonderful cycle.)
+                        </div>
+                    </div>
+
+                    <div className="col-lg-4">
+                        <img src="grow2.png" alt="" width="100%"/>
+                        <div className="grow-item-head">Boost results</div>
+                        <div className="grow-item-sub">
+                        Better deliverability and improved click-through are just the start. 
+                        Rich link-level data allows you to understand who is clicking your links, 
+                        as well as when and where, so you can make smarter decisions around the 
+                        content and you share communications you share.
+                        </div>
+                    </div>
+
+                    <div className="col-lg-4">
+                        <img src="grow3.png" alt="" width="100%"/>
+                        <div className="grow-item-head">Gain control</div>
+                        <div className="grow-item-sub">On top of being able to fully customize your links,
+                        auto-branding boosts awareness of your brand by giving you credit for your content 
+                        and more insight into how it’s being consumed.</div>
+                    </div>
+
+                </div>
+
+                <div className="text-center text-primary mt-5">
+                    <button className="grow-button btn btn-light text-primary">Get Started</button>
+                </div>
+
+                <div className="text-primary text-center sub-grow-button mt-2">Learn More</div>
+            </div>
+        </>
+    )
+
     return (
         <>
             <Menu />
             {heroSection()}
             <ShortenUrl />
+            {surlAbout()}
             <Footer />
         </>
     )

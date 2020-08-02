@@ -21,7 +21,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="row text-dark m-auto more mt-5">
+            <div className="row text-dark m-auto more">
                 <div className="col-12 more-link text-white text-center">
                     More than a link shortener
                 </div>
@@ -112,9 +112,10 @@ const Footer = () => {
                             © 2020 Bitly Handmade in NYC, San Francisco, Denver, and all over the world.
                         </div>
                         <div className="row social">
-                            <i className="lab la-twitter la-2x"></i>
-                            <i className="lab la-linkedin-in la-2x"></i>
-                            <i className="lab la-github la-2x"></i>
+                            <i className="lab la-twitter la-lg"></i>
+                            <i className="lab la-discord la-lg"></i>
+                            <i className="lab la-linkedin-in la-lg"></i>
+                            <i className="lab la-github la-lg"></i>
                         </div>
                     </div>
 

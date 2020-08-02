@@ -62,12 +62,12 @@ body {
     font-family: 'Montserrat';
     font-weight: 800;
     font-size: 1.8rem;
-    margin-top: 80px !important;
-    margin-bottom: 30px !important;
+    margin-top: 50px !important;
+    margin-bottom: 10px !important;
 }
 
 .brands {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     user-select: none;
 }
 .more {
@@ -123,3 +123,53 @@ ul > li {
     margin-top: 100px;
 }
 
+/* surlAbout */
+
+.scroll-text {
+    font-family: 'Montserrat';
+    font-size: 0.9rem;
+    margin-top: -90px;
+}
+
+.grow {
+    margin-top: 7rem;
+}
+
+.grow-brand{
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 2.1rem;
+}
+
+.sub-grow-brand {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    opacity: 0.9;
+    font-size: 1.1rem;
+    margin-bottom: 70px;
+}
+
+.grow-item-head {
+    margin-top: 50px;
+    font-family: 'Montserrat';
+    font-weight: 800;
+}
+
+.grow-item-sub{
+    opacity: 0.8;
+    margin-top: 5px;
+}
+
+.grow-button {
+	background-color: #ecf3f6;
+	border: none;
+	border-radius: 8px;
+	padding: 17px 30px 17px 30px;
+	font-family: "montserrat";
+    font-size: 0.95;
+    margin-top: 45px;
+}
+
+.sub-grow-button{
+    margin-bottom: 60px;
+}
