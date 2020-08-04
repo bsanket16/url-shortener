@@ -4,8 +4,13 @@
   "description": "url shortener",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "concurrently \"cd proj_backend && yarn dev\" \"cd proj_frontend && yarn start\" ",
+    "start": "cd proj_backend && npm install && node app.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd proj_frontend && npm install && npm run build"
   },
   "author": "bsankt",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.2.0"
+  }
 }

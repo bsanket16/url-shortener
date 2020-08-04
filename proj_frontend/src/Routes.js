@@ -7,6 +7,8 @@ import Login from './user/Login'
 import Signup from './user/Signup'
 import Dashboard from './user/Dashboard'
 
+import PrivateRoutes from './auth/PrivateRoutes'
+
 const Routes = () => {
     return (
         <BrowserRouter>
@@ -14,7 +16,7 @@ const Routes = () => {
                 <Route path='/' exact component={ Home } />
                 <Route path='/login' exact component={ Login } />
                 <Route path='/signup' exact component={ Signup } />
-                <Route path='/dashboard' exact component={ Dashboard } />
+                <PrivateRoutes path='/dashboard' exact component={ Dashboard } />
             </Switch>
         </BrowserRouter>
     )

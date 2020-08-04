@@ -122,10 +122,6 @@ body {
 	border-radius: 8px;
 }
 
-.form-control::placeholder {
-	padding-left: 10px;
-}
-
 .url-btn {
 	background-color: #0e379e;
 	border-radius: 8px;
@@ -166,4 +162,10 @@ body {
 
 .list-group-item {
 	opacity: 0.9;
+}
+
+/* Log in Sign up */
+
+.card {
+	border: none;
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
+import { logout, isAuthenticated } from '../auth'
 
 const Menu = () => {
     return (
@@ -261,13 +262,40 @@ const Menu = () => {
 {/* nav 2 */}
 
                         <ul className="navbar-nav ml-auto">
-                            <li className="nav-item mr-3">
-                                <Link className="nav-link" to="/login">Log in</Link>
-                            </li>
 
-                            <li className="nav-item mr-4">
-                                <Link className="nav-link signup" to="/signup">Sign up</Link>
-                            </li>
+                            {!isAuthenticated() && (
+                                <>
+                                    <li className="nav-item mr-3">
+                                        <Link className="nav-link" to="/login">Log in</Link>
+                                    </li>
+
+                                    <li className="nav-item mr-4">
+                                        <Link className="nav-link signup" to="/signup">Sign up</Link>
+                                    </li>
+                                </>
+                            )}
+
+                            {isAuthenticated() && (
+                                <>
+
+                                    <li className="nav-item mr-4">
+                                            <Link className="nav-link signup" to="/dashboard">Dashboard</Link>
+                                    </li>
+
+                                    <li className="nav-item mr-4">
+                                
+                                        <Link className="nav-link" onClick={() => {
+                                                logout(() => {
+                                                    console.log('logged out')
+                                                })
+                                            }} to='/'>
+                                            Logout
+                                        </Link>
+
+                                    </li>
+
+                                </>
+                            )}
 
                             <li className="nav-item d-none d-lg-flex">
                                 <button type="button" className="nav-btn btn btn-primary">Get a Quote</button>
