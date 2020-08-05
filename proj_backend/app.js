@@ -12,11 +12,6 @@ app.use(cors())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
-//Routes
-app.use('/api', require('./routes/auth'))
-app.use('/', require('./routes/url'))
-app.use('/api', require('./routes/user'))
-
 //DB connection
 mongoose.connect( process.env.MONGO_URI, {
     useNewUrlParser: true,
@@ -26,6 +21,11 @@ mongoose.connect( process.env.MONGO_URI, {
 .then(() => {
     console.log(`Database connected successfully`)
 })
+
+//Routes
+app.use('/api', require('./routes/auth'))
+app.use('/', require('./routes/url'))
+app.use('/api', require('./routes/user'))
 
 // Serve static assets
 if (process.env.NODE_ENV === 'production') {
