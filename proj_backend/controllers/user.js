@@ -14,10 +14,17 @@ exports.getUserById = (req, res, next, id) => {
 
 exports.getUserLinks = async (req, res) => {
     try {
-        const user = await User.findOne({ _id: req.params.userId })
-        .populate('links')
-        res.send(user)
-
+        await User.findOne({ _id: req.params.userId })
+        .populate('links').exec((err, links) => {
+            if(err){
+                res.status(201).json({
+                    error: 'No Links Found'
+                })
+            }
+            else {
+                res.send(links.links)
+            }
+        })
     } catch (error) {
         res.status(400).json({
             error : 'No URLs Shortened'

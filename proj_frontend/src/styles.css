@@ -144,3 +144,122 @@ ul > li {
 .sub-grow-button{
     margin-bottom: 60px;
 }
+
+/* dashboard */
+
+a {
+    text-decoration: none !important;
+}
+
+.sub-dashboard-head {
+    font-family: 'Montserrat';
+}
+
+/* forms */
+
+.card {
+    background-color: #fefeff;
+}
+
+.form-control:focus {
+    border-color: none;
+    box-shadow: 0px 0.2px 0.2px #FFFFFF inset, 0px 0px 2px #0161b6;
+}
+/* Sign up login forms */
+
+.form-signin, .form-signup {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    margin: auto;   
+}
+
+.form-label-group {
+    position: relative;
+    margin-bottom: 0.4rem;
+    border-radius: 50px;
+}
+
+.form-label-group > input,
+.form-label-group > label {
+    height: 3.125rem;
+    padding: .75rem;
+}
+
+.form-label-group > label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    margin-bottom: 0; /* Override default `<label>` margin */
+    line-height: 1.5;
+    color: #495057;
+    pointer-events: none;
+    cursor: text; /* Match the input under the label */
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: all .1s ease-in-out;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+    color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+    color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+    color: transparent;
+}
+
+.form-label-group input::placeholder {
+    color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown) {
+    padding-top: 1.25rem;
+    padding-bottom: .25rem;
+}
+
+.form-label-group input:not(:placeholder-shown) ~ label {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    font-size: 12px;
+    color: #777;
+}
+
+/* Fallback for Edge
+-------------------------------------------------- */
+@supports (-ms-ime-align: auto) {
+    .form-label-group > label {
+        display: none;
+    }
+    .form-label-group input::-ms-input-placeholder {
+        color: #777;
+    }
+}
+
+/* Fallback for IE
+-------------------------------------------------- */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .form-label-group > label {
+        display: none;
+    }
+    .form-label-group input:-ms-input-placeholder {
+        color: #777;
+    }
+}
+
+.form-btn {
+    background-color: #015eaf;
+}
+
+.form-btn:hover {
+    background-color: #005299;
+}

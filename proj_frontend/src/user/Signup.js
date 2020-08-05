@@ -63,12 +63,12 @@ const Signup= () => {
             <>
                 <div className="container">
                     <div className="row mb-5">
-                        <div className="card col-10 col-md-10 col-lg-7 p-5 m-auto shadow">
+                        <div className="card col-10 col-md-8 col-lg-6 p-5 m-auto shadow">
                             <div className="card-body">
                                 
 
                                 <form className="form-signup">
-                                        <h1 className='display-4 mt-3 mb-5 text-dark text-center'>User Signup</h1>
+                                        <h1 className='display-4 mt-3 mb-5 text-dark text-center'>Signup</h1>
 
                                         <div className="form-label-group shadow-sm rounded">
                                                 <input type="name" id="inputName" className="form-control" placeholder='Name' 
@@ -88,7 +88,7 @@ const Signup= () => {
                                                 <label htmlFor="inputPassword">New password</label>
                                         </div>
                                             
-                                    <button onClick={ onSubmit } href='/' className="btn btn-lg btn-primary btn-block mt-4 mb-3 shadow-sm rounded" type='submit'> Sign up </button>
+                                    <button onClick={ onSubmit } href='/' className="btn btn-lg btn-block mt-4 text-white mb-3 shadow-sm rounded form-btn" type='submit'> Sign up </button>
                                             
                                     {errorMsg()}
                                     {successMsg()}    

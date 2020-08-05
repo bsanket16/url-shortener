@@ -3,18 +3,7 @@ import React from 'react'
 const Footer = () => {
 
     return (
-        <>
-            <div className="row text-dark m-auto more">
-                <div className="col-12 more-link text-white text-center">
-                    More than a link shortener
-                </div>
-                <div className="col-12 get-started text-center mt-5">
-                    <button className="hero-btn btn btn-primary btn-lg text-white">
-                        Get Started for Free
-                    </button>
-                </div>
-            </div>
-            
+        <>  
                 <footer className="row m-auto pt-5 pb-3">
 
                 <div className="col-1"></div>

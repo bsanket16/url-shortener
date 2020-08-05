@@ -1,8 +1,28 @@
 import React, { useState } from 'react'
+import { isAuthenticated } from '../auth'
+import { API } from '../backend'
 import { Link } from 'react-router-dom'
-import { shortenUrl } from '../auth'
 
-const ShortenUrl = () => {
+const ShortenUrlUser = () => {
+
+    const { _id } = isAuthenticated().user
+    const { token } = isAuthenticated()
+
+    const shortenUrlUser = url => {
+        return fetch(`${API}/url/shorten/${_id}`, {
+            method: "POST",
+            headers: {
+                Accept: "application/json",
+                "Authorization": `Bearer ${token}`,
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(url)
+        })
+        .then(response => {
+            return response.json()
+        })
+        .catch(err => console.log(err))
+    }
 
     const [url, setUrl] = useState({
         originalUrl: '',
@@ -21,7 +41,7 @@ const ShortenUrl = () => {
         event.preventDefault()
         setUrl({...url, error: false})
 
-            shortenUrl({originalUrl})
+            shortenUrlUser({originalUrl})
             .then((data) => {
                 if(data.error){
                     setUrl({...url, error:data.error})
@@ -57,7 +77,7 @@ const ShortenUrl = () => {
                                     onChange={handleChange("originalUrl")} autoComplete="new-name" value= { originalUrl }
                                 />
                                 <div className="sub-shorten-text float-right mt-1 mr-3 d-none d-md-block">
-                                    <Link to="/login" style={{color: 'white'}}><span>Log in</span></Link> to manage and track all your shorten links at one place. <span>Privacy & Terms </span>
+                                    <Link to="/dashboard" style={{color: 'white'}}><span>Manage</span></Link> and track all your shorten links at one place. <span>Privacy & Terms </span>
                                 </div>
                             </div>
 
@@ -103,4 +123,4 @@ const ShortenUrl = () => {
     )
 }
 
-export default ShortenUrl
+export default ShortenUrlUser

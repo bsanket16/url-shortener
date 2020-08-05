@@ -7,6 +7,9 @@ import '../media.css'
 import Menu from './Menu'
 import Footer from './Footer'
 import ShortenUrl from '../user/ShortenUrl'
+import ShortenUrlUser from '../user/ShortenUrlUser'
+
+import { isAuthenticated } from '../auth'
 
 export default function Home() {
 
@@ -116,6 +119,17 @@ export default function Home() {
                     <img className="mt-5 mb-5" src="brand-logos.png" alt="" width="70%" /> 
                 </div>
             </div>
+
+            <div className="row text-dark m-auto more">
+                <div className="col-12 more-link text-white text-center">
+                    More than a link shortener
+                </div>
+                <div className="col-12 get-started text-center mt-5">
+                    <button className="hero-btn btn btn-primary btn-lg text-white">
+                        Get Started for Free
+                    </button>
+                </div>
+            </div>
         </>
     )
 
@@ -123,7 +137,15 @@ export default function Home() {
         <>
             <Menu />
             {heroSection()}
-            <ShortenUrl />
+
+            {!isAuthenticated() && (
+                <ShortenUrl />
+            )}
+
+            {isAuthenticated() && (
+                <ShortenUrlUser />
+            )}
+
             {surlAbout()}
             {brandSrul()}
             <Footer />

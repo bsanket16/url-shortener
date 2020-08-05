@@ -63,7 +63,7 @@ const Login= () => {
 
     const errorMsg = () => {
         return (
-                <div className="container alert alert-danger" style={{display: error ? "" : "none"}}>
+                <div className="container alert text-center alert-danger" style={{display: error ? "" : "none"}}>
                     { error }
                 </div>
         )
@@ -76,11 +76,11 @@ const Login= () => {
 
                 <div className="container">
                     <div className="row mb-5">
-                        <div className="card col-11 col-md-10 col-lg-7 p-5 m-auto shadow">
+                        <div className="card col-11 col-md-8 col-lg-6 p-5 m-auto shadow">
                             <div className="card-body">
 
                                 <form className="form-signin" autoComplete='off'>
-                                        <h1 className='display-4 mt-3 mb-5 text-dark text-center'>User Login</h1>
+                                        <h1 className='display-4 mt-3 mb-5 text-dark text-center'>Login</h1>
                                         
                                         <div className="form-label-group shadow-sm rounded">
                                             <input value={ email } type="email" id="inputEmail" className="form-control" 
@@ -94,7 +94,7 @@ const Login= () => {
                                             <label htmlFor="inputPassword">Password</label>
                                         </div>
                                             
-                                    <button onClick={onSubmit} href='/' className="btn btn-lg btn-warning mt-4 mb-2 btn-block shadow-sm rounded" type='submit'> Log In </button>
+                                    <button onClick={onSubmit} href='/' className="btn btn-lg mt-4 mb-2 btn-block text-white shadow-sm rounded form-btn" type='submit'> Log In </button>
                                             
                                     {errorMsg()}
                                     {loadingMsg()}  

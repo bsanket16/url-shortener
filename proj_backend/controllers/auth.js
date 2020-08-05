@@ -60,8 +60,8 @@ exports.login = (req, res) => {
         res.cookie('token', token, {expire: new Date() + 9999})
 
         //response to frontend
-        const {_id, email} = user
-        return res.json({token, user: {_id, email}})
+        const {_id, username, email, links} = user
+        return res.json({token, user: {_id, username, email, links}})
 
     })
 

@@ -1,5 +1,5 @@
 //backend server
-const API = 'http://localhost:7000'
+import { API } from '../backend'
 
 export const userSignup = user => {
     return fetch(`${API}/api/signup`, {
@@ -65,4 +65,21 @@ export const isAuthenticated = () => {
     else{
         return false
     }
+}
+
+export const shortenUrl = url => {
+
+        return fetch(`${API}/url/shorten`, {
+            method: "POST",
+            headers: {
+                Accept: "application/json",
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(url)
+        })
+        .then(response => {
+            return response.json()
+        })
+        .catch(err => console.log(err))
+
 }

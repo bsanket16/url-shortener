@@ -122,7 +122,7 @@ body {
 	border-radius: 8px;
 }
 
-.url-btn {
+.url-btn, .url-btn:active {
 	background-color: #0e379e;
 	border-radius: 8px;
 	border: none;
