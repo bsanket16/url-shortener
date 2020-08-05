@@ -28,5 +28,15 @@ mongoose.connect( process.env.MONGO_URI, {
 
 const PORT = process.env.PORT || 5000
 
+// Serve static assets
+if (process.env.NODE_ENV === 'production') {
+    
+    app.use(express.static('../proj_frontend/build'))
+    
+    app.get('*', (req, res) => {
+        res.sendFile(path.join(__dirname, + '../proj_frontend/build/index.html'))
+    })
+}
+
 //Server
 app.listen(PORT, console.log(`App running in ${process.env.NODE_ENV} mode at port ${PORT}`))

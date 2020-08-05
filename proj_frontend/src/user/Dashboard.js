@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
-import { API } from '../backend'
+// import { API } from '../backend'
 
 import { isAuthenticated } from '../auth'
 
@@ -16,7 +16,7 @@ const Dashboard = () => {
     const { token } = isAuthenticated()
 
     useEffect(() => {
-        axios.get(`${API}/api/urls/${_id}`, {
+        axios.get(`/api/urls/${_id}`, {
             headers: {
                 'Authorization' : `Bearer ${token}`
             }

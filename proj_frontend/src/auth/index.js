@@ -1,8 +1,8 @@
 //backend server
-import { API } from '../backend'
+// import { API } from '../backend'
 
 export const userSignup = user => {
-    return fetch(`${API}/api/signup`, {
+    return fetch(`/api/signup`, {
         method: "POST",
         headers: {
             Accept: "application/json",
@@ -17,7 +17,7 @@ export const userSignup = user => {
 }
 
 export const userLogin = user => {
-    return fetch(`${API}/api/login`, {
+    return fetch(`/api/login`, {
         method: "POST",
         headers: {
             Accept: "application/json",
@@ -38,7 +38,7 @@ export const logout = next => {
         localStorage.removeItem("jwt")
         next()
 
-        return fetch(`${API}/api/logout`, {
+        return fetch(`/api/logout`, {
             method: "GET"
         })
         .then(response => console.log('logout success'))
@@ -69,7 +69,7 @@ export const isAuthenticated = () => {
 
 export const shortenUrl = url => {
 
-        return fetch(`${API}/url/shorten`, {
+        return fetch(`/url/shorten`, {
             method: "POST",
             headers: {
                 Accept: "application/json",

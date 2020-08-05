@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { isAuthenticated } from '../auth'
-import { API } from '../backend'
+// import { API } from '../backend'
 import { Link } from 'react-router-dom'
 
 const ShortenUrlUser = () => {
@@ -9,7 +9,7 @@ const ShortenUrlUser = () => {
     const { token } = isAuthenticated()
 
     const shortenUrlUser = url => {
-        return fetch(`${API}/url/shorten/${_id}`, {
+        return fetch(`/url/shorten/${_id}`, {
             method: "POST",
             headers: {
                 Accept: "application/json",
