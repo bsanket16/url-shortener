@@ -40,7 +40,7 @@ export default function Home() {
                     </div>
 
                     <div className="hero-right col-12 d-none d-sm-block col-sm-4 col-md-4 mt-1">
-                        <img className="hero-logo" src='' alt="hero"/>
+                        <img className="hero-logo" src='logo.png' alt="hero"/>
                     </div>
                 </div>
             </div>
