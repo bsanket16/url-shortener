@@ -69,7 +69,7 @@ export const isAuthenticated = () => {
 
 export const shortenUrl = url => {
 
-        return fetch(`/api/url/shorten`, {
+        fetch(`/api/url/shorten`, {
             method: "POST",
             headers: {
                 Accept: "application/json",

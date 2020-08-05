@@ -9,7 +9,7 @@ const ShortenUrlUser = () => {
     const { token } = isAuthenticated()
 
     const shortenUrlUser = url => {
-        return fetch(`/api/url/shorten/${_id}`, {
+        fetch(`/api/url/shorten/${_id}`, {
             method: "POST",
             headers: {
                 Accept: "application/json",
