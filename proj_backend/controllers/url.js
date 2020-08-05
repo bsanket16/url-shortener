@@ -3,7 +3,6 @@ const User = require('../models/user')
 
 const validUrl = require('valid-url')
 const shortid = require('shortid')
-const url = require('../models/url')
 
 exports.shortenURL = async ( req, res ) => {
 
