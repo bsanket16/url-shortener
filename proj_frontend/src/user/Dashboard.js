@@ -16,7 +16,7 @@ const Dashboard = () => {
     const { token } = isAuthenticated()
 
     useEffect(() => {
-        axios.get(`/api/urls/${_id}`, {
+        axios.get(`/urls/${_id}`, {
             headers: {
                 'Authorization' : `Bearer ${token}`
             }
