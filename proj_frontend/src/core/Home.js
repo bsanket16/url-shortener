@@ -9,11 +9,11 @@ import Footer from './Footer'
 import ShortenUrl from '../user/ShortenUrl'
 import ShortenUrlUser from '../user/ShortenUrlUser'
 
-import hero from './hero.png'
-import grow1 from './grow1.png'
-import grow2 from './grow2.png'
-import grow3 from './grow3.png'
-import brandLogo from './brand-logos.png'
+import hero from './res/hero.png'
+import grow1 from './res/grow1.png'
+import grow2 from './res/grow2.png'
+import grow3 from './res/grow3.png'
+import brandLogo from './res/brand-logos.png'
 
 import { isAuthenticated } from '../auth'
 
