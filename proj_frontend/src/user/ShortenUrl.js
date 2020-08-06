@@ -78,7 +78,7 @@ const ShortenUrl = () => {
                                 
                                 <li className="list-group-item row d-flex p-1 mt-1">
                                     <span className="col-lg-7 pt-1">{longUrl}</span>
-                                    <a className="col-lg-4 list-group-links pt-1" href={`${shortUrl}`} target="_blank" rel="noopener noreferrer">{shortUrl}</a>
+                                    <a className="col-lg-4 list-group-links pt-1" target="_blank" rel="noopener noreferrer">{shortUrl}</a>
                                     <span className="col-lg-1">
                                         <button type="button" className="copy btn btn-light text-primary">Copy</button>
                                     </span>
