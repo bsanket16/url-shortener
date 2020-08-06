@@ -9,7 +9,7 @@ exports.shortenURL = async ( req, res ) => {
     const user = await User.findOne({ _id: req.params.userId })
 
     const { originalUrl } = req.body
-    const baseUrl = process.env.baseUrl
+    const baseUrl = process.env.baseURL
 
     if(!validUrl.isUri(baseUrl)) {
         return res.status(400).json({
@@ -61,13 +61,13 @@ exports.shortenURL = async ( req, res ) => {
 exports.publicShortenURL = async ( req, res ) => {
 
     const { originalUrl } = req.body
-    const baseUrl = process.env.baseUrl
+    const baseUrl = process.env.baseURL
 
-    // if(!validUrl.isUri(baseUrl)) {
-    //     return res.status(400).json({
-    //         error : 'Invalid base url'
-    //     })
-    // }
+    if(!validUrl.isUri(baseUrl)) {
+        return res.status(400).json({
+            error : 'Invalid base url'
+        })
+    }
 
     const urlCode = shortid.generate()
 
@@ -79,7 +79,7 @@ exports.publicShortenURL = async ( req, res ) => {
                 res.json(url)
             }
             else {
-                const shortUrl =  'https://surll.herokuapp.com' + urlCode
+                const shortUrl = baseUrl + '/' + urlCode
 
                     url = new URL({
                         originalUrl,
