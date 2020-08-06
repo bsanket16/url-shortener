@@ -6,6 +6,8 @@
 
 ## Deployment
 
+This app is deployed using heroku.
+
 ```bash
 https://surll.herokuapp.com
 ```
