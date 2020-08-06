@@ -9,6 +9,8 @@ import Footer from './Footer'
 import ShortenUrl from '../user/ShortenUrl'
 import ShortenUrlUser from '../user/ShortenUrlUser'
 
+import logo from './logo.png'
+
 import { isAuthenticated } from '../auth'
 
 export default function Home() {
@@ -40,7 +42,7 @@ export default function Home() {
                     </div>
 
                     <div className="hero-right col-12 d-none d-sm-block col-sm-4 col-md-4 mt-1">
-                        <img className="hero-logo" src='hero.png' alt="hero"/>
+                        <img className="hero-logo" src={logo} alt="hero"/>
                     </div>
                 </div>
             </div>
