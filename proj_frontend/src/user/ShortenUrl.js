@@ -28,7 +28,7 @@ const ShortenUrl = () => {
                 }
                 else{
                     setUrl({...url,
-                    originalUrl: '',
+                    originalUrl: data.originalUrl,
                     longUrl: data.originalUrl,
                     shortUrl: data.shortUrl,
                     error: ''
@@ -77,7 +77,7 @@ const ShortenUrl = () => {
                             {errorMsg()}
                                 
                                 <li className="list-group-item row d-flex p-1 mt-1">
-                                    <span className="col-lg-7 pt-1">{longUrl}</span>
+                                    <span className="col-lg-7 pt-1">{originalUrl}</span>
                                     <a className="col-lg-4 list-group-links pt-1" target="_blank" rel="noopener noreferrer">{shortUrl}</a>
                                     <span className="col-lg-1">
                                         <button type="button" className="copy btn btn-light text-primary">Copy</button>
