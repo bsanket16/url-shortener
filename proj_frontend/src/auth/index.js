@@ -78,7 +78,7 @@ export const shortenUrl = url => {
         body: JSON.stringify(url)
     };
 
-        return fetch('/api/url/shorten', requestOptions)
+        return fetch('/url/shorten', requestOptions)
         .then(response => {
             return response.json()
         })
