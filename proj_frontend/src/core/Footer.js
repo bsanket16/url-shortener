@@ -1,5 +1,8 @@
 import React from 'react'
 
+import logo from './logo.png'
+
+
 const Footer = () => {
 
     return (
@@ -80,7 +83,7 @@ const Footer = () => {
 {/* 5 */}
                     <div className="col-12 col-lg-2 pt-4 footer-end d-none d-lg-block">
                         <div className="footer-logo">
-                            <img className="foot-logo" src="logo.png" alt="logo" width="30%"/>
+                            <img className="foot-logo" src={logo} alt="logo" width="30%"/>
                         </div>
                         <div className="row brand mt-3 mb-3">
                             © 2020 Bitly Handmade in NYC, San Francisco, Denver, and all over the world.

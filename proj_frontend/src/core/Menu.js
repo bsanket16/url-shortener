@@ -2,6 +2,8 @@ import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
 import { logout, isAuthenticated } from '../auth'
 
+import logo from './logo.png'
+
 const Menu = () => {
     return (
         <>
@@ -9,7 +11,7 @@ const Menu = () => {
                 <div className="container">
                     <span className="navbar-brand">
                         <Link to="/">
-                            <img src="logo.png" alt="logo" width="60%"/>
+                            <img src={logo} alt="logo" width="60%"/>
                         </Link>
                     </span>
 

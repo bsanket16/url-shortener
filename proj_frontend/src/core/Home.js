@@ -9,7 +9,11 @@ import Footer from './Footer'
 import ShortenUrl from '../user/ShortenUrl'
 import ShortenUrlUser from '../user/ShortenUrlUser'
 
-import logo from './logo.png'
+import hero from './hero.png'
+import grow1 from './grow1.png'
+import grow2 from './grow2.png'
+import grow3 from './grow3.png'
+import brandLogo from './brand-logos.png'
 
 import { isAuthenticated } from '../auth'
 
@@ -42,7 +46,7 @@ export default function Home() {
                     </div>
 
                     <div className="hero-right col-12 d-none d-sm-block col-sm-4 col-md-4 mt-1">
-                        <img className="hero-logo" src={logo} alt="hero"/>
+                        <img className="hero-logo" src={hero} alt="hero"/>
                     </div>
                 </div>
             </div>
@@ -64,7 +68,7 @@ export default function Home() {
                 <div className="row">
 
                     <div className="col-lg-4">
-                        <img src="grow1.png" alt="" width="100%"/>
+                        <img src={grow1} alt="" width="100%"/>
                         <div className="grow-item-head">Inspire trust</div>
                         <div className="grow-item-sub">
                         As your click numbers go up, your brand recognition increases. 
@@ -74,7 +78,7 @@ export default function Home() {
                     </div>
 
                     <div className="col-lg-4">
-                        <img src="grow2.png" alt="" width="100%"/>
+                        <img src={grow2} alt="" width="100%"/>
                         <div className="grow-item-head">Boost results</div>
                         <div className="grow-item-sub">
                         Better deliverability and improved click-through are just the start. 
@@ -85,7 +89,7 @@ export default function Home() {
                     </div>
 
                     <div className="col-lg-4">
-                        <img src="grow3.png" alt="" width="100%"/>
+                        <img src={grow3} alt="" width="100%"/>
                         <div className="grow-item-head">Gain control</div>
                         <div className="grow-item-sub">On top of being able to fully customize your links,
                         auto-branding boosts awareness of your brand by giving you credit for your content 
@@ -118,7 +122,7 @@ export default function Home() {
                     The most recognized brands in the world love Surl
                 </div>
                 <div className="col-12 brands d-none d-sm-block">
-                    <img className="mt-5 mb-5" src="brand-logos.png" alt="" width="70%" /> 
+                    <img className="mt-5 mb-5" src={brandLogo} alt="" width="70%" /> 
                 </div>
             </div>
 
