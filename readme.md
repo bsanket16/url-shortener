@@ -1,8 +1,14 @@
-# sURL - Custom URL Shortener
+# sURL - Custom URL Shortener & Link Management
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/66514052/89553405-17a36900-d82b-11ea-8dd0-57f5a56e933d.gif">
 </p>
+
+## Deployment
+
+```bash
+https://surll.herokuapp.com
+```
 
 ## Installation
 
