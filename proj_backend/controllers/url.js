@@ -63,11 +63,11 @@ exports.publicShortenURL = async ( req, res ) => {
     const { originalUrl } = req.body
     const baseUrl = process.env.baseUrl
 
-    if(!validUrl.isUri(baseUrl)) {
-        return res.status(400).json({
-            error : 'Invalid base url'
-        })
-    }
+    // if(!validUrl.isUri(baseUrl)) {
+    //     return res.status(400).json({
+    //         error : 'Invalid base url'
+    //     })
+    // }
 
     const urlCode = shortid.generate()
 
