@@ -23,9 +23,9 @@ mongoose.connect( process.env.MONGO_URI, {
 })
 
 //Routes
-app.use('/api', require('./routes/auth'))
-app.use('/api', require('./routes/url'))
-app.use('/api', require('./routes/user'))
+app.use('/', require('./routes/auth'))
+app.use('/', require('./routes/url'))
+app.use('/', require('./routes/user'))
 
 // Serve static assets
 if (process.env.NODE_ENV === 'production') {

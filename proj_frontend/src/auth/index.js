@@ -2,7 +2,7 @@
 // import { API } from '../backend'
 
 export const userSignup = user => {
-    return fetch(`/api/signup`, {
+    return fetch(`/signup`, {
         method: "POST",
         headers: {
             Accept: "application/json",
@@ -17,7 +17,7 @@ export const userSignup = user => {
 }
 
 export const userLogin = user => {
-    return fetch(`/api/login`, {
+    return fetch(`/login`, {
         method: "POST",
         headers: {
             Accept: "application/json",
@@ -38,7 +38,7 @@ export const logout = next => {
         localStorage.removeItem("jwt")
         next()
 
-        return fetch(`/api/logout`, {
+        return fetch(`/logout`, {
             method: "GET"
         })
         .then(response => console.log('logout success'))
