@@ -79,7 +79,7 @@ exports.publicShortenURL = async ( req, res ) => {
                 res.json(url)
             }
             else {
-                const shortUrl = baseUrl + '/' + urlCode
+                const shortUrl =  'https://surll.herokuapp.com' + urlCode
 
                     url = new URL({
                         originalUrl,
