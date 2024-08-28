@@ -8,10 +8,6 @@
 
 This app is deployed using heroku.
 
-```bash
-https://surll.herokuapp.com
-```
-
 ## Installation
 
 Use the package manager npm / yarn to install.
